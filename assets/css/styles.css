@@ -603,6 +603,10 @@ footer .col .desc {
     border-radius: 4px;
 }
 
+.footer .social a:hover {
+    background-color: rgb(245, 243, 243);
+}
+
 .footer .row-bottom {
     margin-top: 81px;
     display: flex;

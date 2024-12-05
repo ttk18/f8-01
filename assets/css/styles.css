@@ -343,10 +343,23 @@ header {
 }
 .stast .row {
     display: flex;
-    justify-content: space-evenly;
 }
 
-.stast .row .img-block img {
+.stast .content {
+    width: 1024px;
+}
+
+.stast .img-block {
+    position: relative;
+}
+
+.stast .img-block,
+.stast .info {
+    width: 50%;
+}
+
+.stast .row .img-block .image {
+    margin-left: auto;
     width: 400px;
     height: 480px;
     display: block;
@@ -356,7 +369,7 @@ header {
 
 .stast .row .info {
     width: 309px;
-    margin: 80px 0 0 30px;
+    margin: 80px 0 0 165px;
 }
 
 .stast .info .title {
@@ -370,4 +383,221 @@ header {
     font-size: 1.6;
     font-weight: 400;
     line-height: 1.87;
+}
+
+.trend {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 240px;
+    padding: 45px 22px;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.trend .row {
+    display: flex;
+}
+
+.trend .row img {
+    margin-left: auto;
+}
+
+.trend .row strong {
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #000339;
+}
+
+.trend .desc {
+    margin-top: 8px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #a7a7a7;
+}
+
+.trend .separate {
+    margin: 26px 0;
+    height: 1.2px;
+    background-color: #e9e9e9;
+}
+.trend .avatar-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 14px;
+}
+.trend .avatar-group {
+    display: flex;
+}
+
+.trend .avatar-group .avatar {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.trend .avatar-group .avatar ~ .avatar {
+    margin-left: -4px;
+}
+
+.trend .avatar-group .avatar-empty {
+    display: flex;
+    background-color: #1f3bb1;
+    justify-content: center;
+    align-items: center;
+}
+
+.trend .avatar-group .avatar-empty span {
+    font-size: 0.7rem;
+    font-weight: 450;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.stast .row-qty {
+    margin-top: 110px;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+
+.stast .qty {
+    font-size: 6.4rem;
+    font-weight: 600;
+}
+
+.stast .qty-desc {
+    margin-top: 22px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #7b8087;
+}
+
+.subscription {
+    margin-top: 51px;
+}
+
+.subscription .body {
+    height: 380px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #063183;
+    border-radius: 20px;
+}
+
+.subscription .body .info {
+    padding: 0 80px;
+}
+
+.subscription .info .sub-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #ffffff;
+    width: 550px;
+    max-width: 100%;
+}
+
+.subscription .info .desc {
+    margin-top: 15px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    opacity: 0.75;
+    width: 550px;
+    max-width: 100%;
+}
+
+.subscription .info .btn {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #002366;
+    background-color: #fff;
+    width: 151px;
+}
+
+.subscription .image {
+    position: absolute;
+    bottom: 0;
+    right: 231px;
+}
+
+/* Footer */
+.footer {
+    padding: 50px 0;
+}
+.footer .row-top {
+    display: flex;
+}
+
+.footer .col {
+    margin-right: 185px;
+}
+
+.footer .col .title {
+    white-space: nowrap;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1c1c1d;
+}
+
+.footer .col .list,
+footer .col .desc {
+    margin-top: 42px;
+}
+
+.footer .col .item {
+    margin-top: 18px;
+}
+
+.footer .col .item a {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #7a7a7e;
+}
+
+.footer .col .desc {
+    width: 257px;
+}
+
+.footer .social {
+    margin-top: 40px;
+    display: flex;
+}
+
+.footer .social img {
+    padding: 18ox;
+}
+
+.footer .social a {
+    margin-right: 18px;
+    width: 28px;
+    height: 28px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.footer .row-bottom {
+    margin-top: 81px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .row-bottom .copyright {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #c2c2c2;
 }

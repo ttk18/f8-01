@@ -6,6 +6,11 @@
     --primary-color: #0f1b4c;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -57,11 +62,13 @@ p {
 
 .hero-wrap {
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 90px);
     background-color: #e6f0ff;
-    padding-top: 130px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
-main > .header {
+header.header {
     top: -26px;
     position: sticky;
     background-color: #e6f0ff;
@@ -109,12 +116,12 @@ main > .header {
 
 /* hero */
 
-.hero {
+.hero-wrap .info {
     width: 52.6%;
-    margin-top: 130px;
+    /* margin-top: 130px; */
 }
 
-.hero .sub-title {
+.hero-wrap .sub-title {
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.5;
@@ -123,26 +130,26 @@ main > .header {
     color: #687690;
 }
 
-.hero .title {
+.hero-wrap .title {
     margin-top: 8px;
     font-size: 6.4rem;
     font-weight: 700;
     line-height: 1.19;
 }
 
-.hero .desc {
+.hero-wrap .desc {
     margin-top: 30px;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.78;
 }
 
-.hero .btn-cta {
+.hero-wrap .btn-cta {
     margin-top: 40px;
     min-width: 170px;
 }
 
-.hero .hero-img {
+.hero-wrap .hero-img {
     position: absolute;
     bottom: 0;
     right: calc((100vw - 1110px) / 2 - 100px);

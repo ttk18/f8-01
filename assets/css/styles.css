@@ -55,16 +55,23 @@ p {
 }
 /* HEADER */
 
-header {
+.hero-wrap {
     position: relative;
     height: 100vh;
     background-color: #e6f0ff;
+    padding-top: 130px;
 }
-
+main > .header {
+    top: -26px;
+    position: sticky;
+    background-color: #e6f0ff;
+    z-index: 1;
+}
 .navbar {
     display: flex;
     align-items: center;
     padding-top: 38px;
+    padding-bottom: 12px;
 }
 
 .navbar ul {

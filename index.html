@@ -85,28 +85,67 @@
     <body>
         <header class="header">
             <div class="content">
-                <nav>
-                    <div class="navbar">
-                        <!-- Logo -->
-                        <a href="#"
-                            ><img src="./assets/image/logo.svg" alt="Besnik."
-                        /></a>
-                        <!-- Navigation -->
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#features">Features</a></li>
-                            <li><a href="#resources">Resources</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                        <!-- Action -->
-                        <div class="actions">
-                            <a href="!#" class="action-link">Sign in</a>
-                            <a href="!#" class="btn action-btn">Sign up</a>
-                        </div>
+                <nav class="navbar">
+                    <!-- Logo -->
+                    <label
+                        for="header-checkbox"
+                        class="hide-only-pc header-menu-list"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-list"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                            />
+                        </svg>
+                    </label>
+                    <a href="#"
+                        ><img src="./assets/image/logo.svg" alt="Besnik."
+                    /></a>
+                    <!-- Navigation -->
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <!-- Action -->
+                    <div class="actions hide-on-mobile">
+                        <a href="!#" class="action-link">Sign in</a>
+                        <a href="!#" class="btn action-btn">Sign up</a>
                     </div>
                 </nav>
             </div>
+        </header>
+        <header class="header-tablet-mobile hide-only-pc">
+            <input
+                type="checkbox"
+                class="header-checkbox"
+                hidden
+                id="header-checkbox"
+            />
+            <label for="header-checkbox" class="overlay"></label>
+            <nav class="header-tablet-mobile__nav">
+                <a href="#"
+                    ><img src="./assets/image/logo.svg" alt="Besnik."
+                /></a>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="hide-on-tablet sign-in">
+                        <a href="#!">Sign in</a>
+                    </li>
+                    <li class="hide-on-tablet"><a href="#!">Sign up</a></li>
+                </ul>
+            </nav>
         </header>
         <main id="home">
             <div class="hero-wrap">
@@ -148,7 +187,9 @@
                         <p class="desc">
                             More than 45,000+ companies trust besnik
                         </p>
-                        <p class="desc">5 Star Ratings (2k+ Review)</p>
+                        <p class="desc hide-on-mobile">
+                            5 Star Ratings (2k+ Review)
+                        </p>
                     </div>
                     <div class="row row-img">
                         <a href="#!">
@@ -379,12 +420,16 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="feature-cta hide-only-pc">
+                        <a href="#!" class="btn">View All Properties</a>
+                    </div>
                 </div>
             </div>
 
             <div id="resources" class="stast">
                 <div class="content">
-                    <div class="row">
+                    <div class="row row-top">
                         <div class="img-block">
                             <img
                                 class="image"
